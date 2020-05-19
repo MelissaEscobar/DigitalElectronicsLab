@@ -1,0 +1,10 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf02s          [2 M]
+FF
+mcqueen
+C:\Users\utp\Desktop\Melissa\mcqueen\
+
+MCS
+No
+

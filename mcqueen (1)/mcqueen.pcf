@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 16 15:17:14 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Switch" LOCATE = SITE "P11" LEVEL 1;
+COMP "Motor2b" LOCATE = SITE "B5" LEVEL 1;
+COMP "Motor1a" LOCATE = SITE "B2" LEVEL 1;
+COMP "Motor1b" LOCATE = SITE "A3" LEVEL 1;
+COMP "Clock" LOCATE = SITE "B8" LEVEL 1;
+COMP "Motor2a" LOCATE = SITE "J3" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

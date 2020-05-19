@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/utp/Desktop/dig/dig1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/utp/Desktop/dig/dig1/xst"
+elaborate
+-ifn vehi.prj
+-ifmt mixed

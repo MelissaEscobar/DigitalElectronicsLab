@@ -1,0 +1,451 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: receiver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "receiver.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "receiver"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : receiver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd" in Library work.
+Entity <receiver> compiled.
+Entity <receiver> (Architecture <rx>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <receiver> in library <work> (architecture <rx>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <receiver> in library <work> (Architecture <rx>).
+Entity <receiver> analyzed. Unit <receiver> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <receiver>.
+    Related source file is "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd".
+WARNING:Xst:646 - Signal <tmp<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <leds>.
+    Found 10-bit up counter for signal <c>.
+    Found 2-bit up counter for signal <c2>.
+    Found 2-bit comparator greater for signal <c2$cmp_gt0000> created at line 69.
+    Found 1-bit register for signal <delay>.
+    Found 10-bit comparator less for signal <delay$cmp_lt0000> created at line 55.
+    Found 1-bit register for signal <done>.
+    Found 4-bit up counter for signal <i>.
+    Found 4-bit comparator greatequal for signal <i$cmp_ge0000> created at line 153.
+    Found 4-bit comparator less for signal <leds$cmp_lt0000> created at line 153.
+    Found 1-bit register for signal <presentstate<0>>.
+    Found 9-bit register for signal <tmp>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <receiver> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 5
+ 1-bit register                                        : 3
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 4
+ 10-bit comparator less                                : 1
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <tmp_0> of sequential type is unconnected in block <receiver>.
+WARNING:Xst:2677 - Node <tmp_0> of sequential type is unconnected in block <receiver>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Comparators                                          : 4
+ 10-bit comparator less                                : 1
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <receiver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block receiver, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : receiver.ngr
+Top Level Output File Name         : receiver
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 48
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 9
+#      LUT2                        : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 3
+#      LUT4                        : 6
+#      LUT4_L                      : 1
+#      MUXCY                       : 9
+#      VCC                         : 1
+#      XORCY                       : 10
+# FlipFlops/Latches                : 35
+#      FDCE                        : 8
+#      FDE                         : 14
+#      FDR                         : 13
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       21  out of    960     2%  
+ Number of Slice Flip Flops:             35  out of   1920     1%  
+ Number of 4 input LUTs:                 27  out of   1920     1%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of     83    13%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 11    |
+capture1(capture_cmp_eq00001:O)    | BUFG(*)(presentstate_0)| 22    |
+delay                              | NONE(c2_0)             | 2     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.920ns (Maximum Frequency: 203.252MHz)
+   Minimum input arrival time before clock: 4.867ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.920ns (frequency: 203.252MHz)
+  Total number of paths / destination ports: 144 / 22
+-------------------------------------------------------------------------
+Delay:               4.920ns (Levels of Logic = 2)
+  Source:            c_5 (FF)
+  Destination:       c_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c_5 to c_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  c_5 (c_5)
+     LUT2:I0->O            1   0.704   0.455  delay_not00023 (delay_not00023)
+     LUT4:I2->O           11   0.704   0.933  delay_not000216 (delay_not0002)
+     FDR:R                     0.911          c_0
+    ----------------------------------------
+    Total                      4.920ns (2.910ns logic, 2.010ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'capture1'
+  Clock period: 4.115ns (frequency: 243.013MHz)
+  Total number of paths / destination ports: 110 / 41
+-------------------------------------------------------------------------
+Delay:               4.115ns (Levels of Logic = 2)
+  Source:            i_3 (FF)
+  Destination:       leds_0 (FF)
+  Source Clock:      capture1 rising
+  Destination Clock: capture1 rising
+
+  Data Path: i_3 to leds_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.637  i_3 (i_3)
+     LUT4_L:I3->LO         1   0.704   0.104  done_mux0002_SW0 (N9)
+     LUT4:I3->O            9   0.704   0.820  done_mux0002 (done_mux0002)
+     FDCE:CE                   0.555          leds_0
+    ----------------------------------------
+    Total                      4.115ns (2.554ns logic, 1.561ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'delay'
+  Clock period: 2.554ns (frequency: 391.543MHz)
+  Total number of paths / destination ports: 5 / 4
+-------------------------------------------------------------------------
+Delay:               2.554ns (Levels of Logic = 1)
+  Source:            c2_0 (FF)
+  Destination:       c2_0 (FF)
+  Source Clock:      delay rising
+  Destination Clock: delay rising
+
+  Data Path: c2_0 to c2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.531  c2_0 (c2_0)
+     INV:I->O              1   0.704   0.420  Mcount_c2_xor<0>11_INV_0 (Result<0>1)
+     FDR:D                     0.308          c2_0
+    ----------------------------------------
+    Total                      2.554ns (1.603ns logic, 0.951ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'capture1'
+  Total number of paths / destination ports: 29 / 25
+-------------------------------------------------------------------------
+Offset:              4.867ns (Levels of Logic = 3)
+  Source:            rx (PAD)
+  Destination:       leds_0 (FF)
+  Destination Clock: capture1 rising
+
+  Data Path: rx to leds_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.762  rx_IBUF (rx_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.104  done_mux0002_SW0 (N9)
+     LUT4:I3->O            9   0.704   0.820  done_mux0002 (done_mux0002)
+     FDCE:CE                   0.555          leds_0
+    ----------------------------------------
+    Total                      4.867ns (3.181ns logic, 1.686ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'capture1'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            leds_7 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      capture1 rising
+
+  Data Path: leds_7 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.591   0.420  leds_7 (leds_7)
+     OBUF:I->O                 3.272          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.87 secs
+ 
+--> 
+
+Total memory usage is 258140 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

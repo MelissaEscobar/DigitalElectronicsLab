@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\utp\Desktop\Melissa\mcqueen\//mcqueen -x xcf02s -u 00000000 C:/Users/utp/Desktop/Melissa/mcqueen/mcqueen.bit 
+
+PROM C:\Users\utp\Desktop\Melissa\mcqueen\mcqueen.prm map: Thu May 16 15:18:07 2019
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          256K
+PROM start    0000:0000
+PROM end      0003:ffff
+PROM checksum 02e2d171
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0001:1bdb     May 16 15:17:26 2019 C:/Users/utp/Desktop/Melissa/mcqueen/mcqueen.bit

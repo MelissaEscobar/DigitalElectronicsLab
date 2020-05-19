@@ -1,0 +1,84 @@
+%Quick Latex Template.
+%Homeworks and reports. UTP-2016
+%feedback:hfjimenez@utp.edu.co
+\documentclass{article}									%Document class.
+\usepackage[utf8]{inputenc}								%Tildes.
+\usepackage{gensymb}		
+\usepackage{graphicx}									%Images in the paper.
+\usepackage{authblk}						
+\usepackage{float}% Image will be in the same place as you want.!!! x-/
+\usepackage{verbatim}
+\usepackage[table,xcdraw]{xcolor}
+
+\title{Bitácora Laboratorio de electrónica digital}
+\author{Melissa Escobar Gutiérrez, Laura Daniela Galeano Villada\thanks{melissa.escobar@utp.edu.co, l.galeano@utp.edu.co} }
+
+\date{Abril 2019}
+\begin{document}
+\maketitle
+
+\section{Introducción}
+
+
+Teniendo presente que el decaimiento beta es un proceso mediante el cual un nucleido o núclido inestable emite una partícula $\beta$ (un electrón o positrón) para compensar la relación de neutrones y protones del núcleo atómico. \textbf{Henri Becquerel}, mientras experimentaba con fluorescencia, descubrió accidentalmente que el uranio impresionaba una placa fotográfica, envuelta con papel negro, con una radiación desconocida que no pudo ser considerada como rayos X. \newline
+Tiempo después \textbf{Ernest Rutherford} continuó estos experimentos y descubrió dos tipos diferentes de radiación:
+
+
+\begin{comment}
+
+\begin{enumerate}
+\item partículas alfa que no aparecen en las placas de Becquerel porque eran fácilmente absorbidas por las envolventes negro;
+\item partículas beta que son 100 veces más penetrantes que las partículas alfa.
+\end{enumerate}
+ 
+\begin{figure}[H]
+  \centering
+     \includegraphics[width=0.97\textwidth]{radpen}
+  \caption{Penetración de materiales, partículas Alfa, Gamma, Beta. Gamma es la mas penetrante.}
+      \label{fig:penetracion}
+\end{figure}
+\begin{figure}[H]
+  \centering
+     \includegraphics[width=0.97\textwidth]{alpbet}
+  \caption{Alfa, Beta, y Gamma.}
+      \label{fig:particulas}
+\end{figure}
+
+\end{comment}
+
+En la presente bitácora se pretende llevar un registro de las investigaciones y procedimientos que se realizarán a lo largo del semestre para desarrollar el proyecto propuesto. 
+
+
+ $$\\$$
+ \subsection{Objetivos del proyecto}
+ \begin{itemize}
+	\item Objetivo de la primera entrega: realizar el diseño y y construir el chasis del carro. 
+	\item Objetivo de la segunda entrega: 
+	\item Hallar la energía de decaimiento beta para la muestra TI-204
+	\item Estudiar las características de absorción de los rayos $\beta$, $\alpha$ y $\gamma$.
+\end{itemize}
+
+
+ \subsection{Materiales Utilizados para la Práctica}
+\begin{itemize}
+\item Motores dc (2): 8.000 c/u 
+\item Puente H : 12.000
+\item Baterías (2) :  10.000 c/u de 3.7 V
+\item Módulo bluetooth : 20.000
+\end{itemize}
+%$\\$
+%$\\$
+\section{ Bitácora}
+\subsection{}
+En la semana 1 de trabajo realizamos la investigación de las piezas requeridas para llevar a cabo el proyecto y también cuál sería la mejor forma de construir el chasis del carro.
+Inicialmente habíamos decidido realizar el diseño del carro utilizando un software similar a AutoCAD, para imprimirlo en 3D, pero después de realizar cotizaciones con algunas personas (familiar y monitor de laboratorio de modelos de mecánica) nos dimos cuenta que saldría demasiado costoso (al rededor de 200.000 solo al fabricante), así que descartamos esta alternativa. Posteriormente pensamos hacer el diseño tipo cajita, con mdf, y recortar las piezas diseñadas con una cortadora láser que hay en mecánica. 
+Después de analizar los costos nos dimos cuenta que la mejor alternativa era comprar un carrito ya hecho de plástico, que fuera lo suficientemente grande para instalar las piezas electrónicas requeridas.
+
+\subsection{}
+En la semana 2 fuimos a comprar las piezas: los motores con las llantas, el puente H, el módulo bluetooth, las baterías y el chasis del carro.
+
+\subsection{}
+En la semana 3 pensamos en la acomodación de las piezas electrónicas y las organizamos en la plataforma del chasis siguiendo algunas recomendaciones que encontramos en internet y que nos dieron otras personas que han realizado proyectos similares.
+
+\end{document}
+

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/utp/Desktop/dig/dig1/carrito.xst" -ofn "C:/Users/utp/Desktop/dig/dig1/carrito.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 carrito.ngc carrito.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o carrito_map.ncd carrito.ngd carrito.pcf 
+par -w -intstyle ise -ol high -t 1 carrito_map.ncd carrito.ncd carrito.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml carrito.twx carrito.ncd -o carrito.twr carrito.pcf 
+bitgen -intstyle ise -f carrito.ut carrito.ncd 
+xst -intstyle ise -ifn "C:/Users/utp/Desktop/dig/dig1/carrito.xst" -ofn "C:/Users/utp/Desktop/dig/dig1/carrito.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc3s100e-cp132-4 carrito.ngc carrito.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o carrito_map.ncd carrito.ngd carrito.pcf 
+par -w -intstyle ise -ol high -t 1 carrito_map.ncd carrito.ncd carrito.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml carrito.twx carrito.ncd -o carrito.twr carrito.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f carrito.ut carrito.ncd 

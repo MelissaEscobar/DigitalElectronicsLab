@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="mcqueen.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mcqueen.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mcqueen.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mcqueen.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mcqueen.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mcqueen.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mcqueen.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="mcqueen.mcs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mcqueen.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mcqueen.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mcqueen.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mcqueen.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mcqueen.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mcqueen.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mcqueen.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mcqueen.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="mcqueen.prm"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mcqueen.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mcqueen.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mcqueen.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mcqueen.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mcqueen.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mcqueen.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mcqueen.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mcqueen.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mcqueen.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcqueen_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mcqueen_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mcqueen_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mcqueen_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mcqueen_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mcqueen_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcqueen_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcqueen_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mcqueen_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mcqueen_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcqueen_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mcqueen_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mcqueen_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mcqueen_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mcqueen_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mcqueen_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3748988404953231437" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="525296384525171100" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3302686339000384817" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037699" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3689167836813003034" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037706" xil_pn:in_ck="171700891404483838" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="6778068687281470349" xil_pn:start_ts="1558037699">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.lso"/>
+      <outfile xil_pn:name="mcqueen.ngc"/>
+      <outfile xil_pn:name="mcqueen.ngr"/>
+      <outfile xil_pn:name="mcqueen.prj"/>
+      <outfile xil_pn:name="mcqueen.stx"/>
+      <outfile xil_pn:name="mcqueen.syr"/>
+      <outfile xil_pn:name="mcqueen.xst"/>
+      <outfile xil_pn:name="mcqueen_vhdl.prj"/>
+      <outfile xil_pn:name="mcqueen_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037827" xil_pn:in_ck="171700891404482586" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5160076950498936902" xil_pn:start_ts="1558037827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037832" xil_pn:in_ck="-4321506753828788626" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4102621416724166551" xil_pn:start_ts="1558037827">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.bld"/>
+      <outfile xil_pn:name="mcqueen.ngd"/>
+      <outfile xil_pn:name="mcqueen_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037836" xil_pn:in_ck="-4270964647315061809" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1558037832">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.pcf"/>
+      <outfile xil_pn:name="mcqueen_map.map"/>
+      <outfile xil_pn:name="mcqueen_map.mrp"/>
+      <outfile xil_pn:name="mcqueen_map.ncd"/>
+      <outfile xil_pn:name="mcqueen_map.ngm"/>
+      <outfile xil_pn:name="mcqueen_map.xrpt"/>
+      <outfile xil_pn:name="mcqueen_summary.xml"/>
+      <outfile xil_pn:name="mcqueen_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037844" xil_pn:in_ck="-2316194030244897464" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1558037836">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.ncd"/>
+      <outfile xil_pn:name="mcqueen.pad"/>
+      <outfile xil_pn:name="mcqueen.par"/>
+      <outfile xil_pn:name="mcqueen.ptwx"/>
+      <outfile xil_pn:name="mcqueen.unroutes"/>
+      <outfile xil_pn:name="mcqueen.xpi"/>
+      <outfile xil_pn:name="mcqueen_pad.csv"/>
+      <outfile xil_pn:name="mcqueen_pad.txt"/>
+      <outfile xil_pn:name="mcqueen_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037851" xil_pn:in_ck="171700891404474961" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1558037844">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.bgn"/>
+      <outfile xil_pn:name="mcqueen.bit"/>
+      <outfile xil_pn:name="mcqueen.drc"/>
+      <outfile xil_pn:name="mcqueen.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037857" xil_pn:in_ck="171700891404462107" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="1890673188639090495" xil_pn:start_ts="1558037857">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="mcqueen.mcs"/>
+      <outfile xil_pn:name="mcqueen.prm"/>
+    </transform>
+    <transform xil_pn:end_ts="1558037844" xil_pn:in_ck="7504221366582549963" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1558037841">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mcqueen.twr"/>
+      <outfile xil_pn:name="mcqueen.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

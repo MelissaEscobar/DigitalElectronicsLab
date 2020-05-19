@@ -1,0 +1,7 @@
+
+NET "motor1a" LOC = B2;
+NET "motor1b" LOC = A3;
+NET "motor2a" LOC = J3;
+NET "motor2b" LOC = B5;
+NET "Switch" LOC = P11;
+NET "Clock" LOC = B8;

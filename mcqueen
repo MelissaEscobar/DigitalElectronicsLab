@@ -1,0 +1,63 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+
+entity mcqueen is
+    Port ( Switch : in  STD_LOGIC;
+           Clock : in  STD_LOGIC;
+           Motor1a : out  STD_LOGIC;
+           Motor1b : out  STD_LOGIC;
+           Motor2a : out  STD_LOGIC;
+           Motor2b : out  STD_LOGIC);
+end mcqueen;
+
+architecture Behavioral of mcqueen is
+
+	signal count: INTEGER range 0 to 300000000; --  
+
+begin
+
+	counter: process (Clock)
+	begin
+		if (Clock'event and Clock='1') then
+			if (Switch='1') then
+				count <= count + 1;
+				if(count>300000000) then
+					count <= 0;
+				end if;	
+			else 
+				count <= 0;
+			end if;
+		end if;
+	end process;
+
+	salidas: process (count)
+	begin
+		if (count>0 and count<100000000) then 
+			Motor1a <= '1';
+			Motor1b <= '0';
+			Motor2a <= '1';
+			Motor2b <= '0';
+		elsif (count>100000000 and count<200000000) then
+			Motor1a <= '0';
+			Motor1b <= '0';
+			Motor2a <= '0';
+			Motor2b <= '0';
+		elsif (count>200000000 and count<300000000) then
+			Motor1a <= '0';
+			Motor1b <= '1';
+			Motor2a <= '0';
+			Motor2b <= '1';
+		else
+			Motor1a <= '0';
+			Motor1b <= '0';
+			Motor2a <= '0';
+			Motor2b <= '0';
+		end if;
+	end process;
+end Behavioral;
+
+
+

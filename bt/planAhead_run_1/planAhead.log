@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Jun 06 13:42:52 2019
+# Process ID: 7628
+# Log file: C:/Users/utp/Documents/Diablo III/bt/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/utp/Documents/Diablo III/bt/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -828 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Users/utp/Documents/Diablo III/bt/pa.fromHdl.tcl}
+# create_project -name bt -dir "C:/Users/utp/Documents/Diablo III/bt/planAhead_run_1" -part xc3s100ecp132-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "receiver.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/utp/Documents/Diablo III/bt/receiver.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {receiver.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top receiver $srcset
+# add_files [list {receiver.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s100ecp132-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s100e/cp132/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/utp/Documents/Diablo III/bt/receiver.ucf]
+Finished Parsing UCF File [C:/Users/utp/Documents/Diablo III/bt/receiver.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 62ea002a
+open_rtl_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 532.305 ; gain = 130.441
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {leds[6]}]]
+startgroup
+set_property package_pin G1 [get_ports {leds[7]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports rx]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {leds[6]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {leds[5]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {leds[4]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {leds[3]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {leds[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {leds[1]}]]
+startgroup
+set_property package_pin M11 [get_ports {leds[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {leds[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/Users/utp/Documents/Diablo III/bt\planAhead_pid7628.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Jun 06 13:52:24 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

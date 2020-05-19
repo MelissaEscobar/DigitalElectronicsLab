@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd" 2019/06/06.13:42:46 P.20131013
+EN work/receiver 1559847198 \
+      FL "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/receiver/rx 1559847199 \
+      FL "C:/Users/utp/Documents/Diablo III/bt/receiver.vhd" EN work/receiver 1559847198

@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/utp/Documents/Diablo III/bt/receiver.xst" -ofn "C:/Users/utp/Documents/Diablo III/bt/receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "receiver.ngc" receiver.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o receiver_map.ncd receiver.ngd receiver.pcf 
+par -w -intstyle ise -ol high -t 1 receiver_map.ncd receiver.ncd receiver.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml receiver.twx receiver.ncd -o receiver.twr receiver.pcf 
+xst -intstyle ise -ifn "C:/Users/utp/Documents/Diablo III/bt/receiver.xst" -ofn "C:/Users/utp/Documents/Diablo III/bt/receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc receiver.ucf -p xc3s100e-cp132-4 "receiver.ngc" receiver.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o receiver_map.ncd receiver.ngd receiver.pcf 
+par -w -intstyle ise -ol high -t 1 receiver_map.ncd receiver.ncd receiver.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml receiver.twx receiver.ncd -o receiver.twr receiver.pcf -ucf receiver.ucf 
+bitgen -intstyle ise -f receiver.ut receiver.ncd 

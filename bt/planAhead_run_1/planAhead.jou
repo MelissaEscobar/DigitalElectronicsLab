@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Jun 06 13:42:52 2019
+# Process ID: 7628
+# Log file: C:/Users/utp/Documents/Diablo III/bt/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/utp/Documents/Diablo III/bt/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/utp/Documents/Diablo III/bt/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {leds[6]}]]
+startgroup
+set_property package_pin G1 [get_ports {leds[7]}]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports rx]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {leds[6]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {leds[5]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {leds[4]}]
+endgroup
+startgroup
+set_property package_pin P6 [get_ports {leds[3]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {leds[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {leds[1]}]]
+startgroup
+set_property package_pin M11 [get_ports {leds[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {leds[0]}]
+endgroup
+save_constraints

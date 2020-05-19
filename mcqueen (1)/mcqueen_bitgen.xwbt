@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\utp\Desktop\Melissa\mcqueen\mcqueen.ncd
+OUTFILE=C:\Users\utp\Desktop\Melissa\mcqueen\mcqueen.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\utp\Desktop\Melissa\mcqueen
+LICENSE=WebPack
+USER_INFO=211158507_0_0_856

@@ -1,0 +1,409 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: mcqueen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mcqueen.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mcqueen"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : mcqueen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/utp/Desktop/Melissa/mcqueen/mcqueen.vhd" in Library work.
+Architecture behavioral of Entity mcqueen is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mcqueen> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mcqueen> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/utp/Desktop/Melissa/mcqueen/mcqueen.vhd" line 35: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <count>
+Entity <mcqueen> analyzed. Unit <mcqueen> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mcqueen>.
+    Related source file is "C:/Users/utp/Desktop/Melissa/mcqueen/mcqueen.vhd".
+    Found 29-bit up counter for signal <count>.
+    Found 29-bit comparator greater for signal <Motor1a$cmp_gt0000> created at line 37.
+    Found 29-bit comparator less for signal <Motor1a$cmp_lt0000> created at line 37.
+    Found 29-bit comparator greater for signal <Motor1b$cmp_gt0000> created at line 41.
+    Found 29-bit comparator greater for signal <Motor1b$cmp_gt0001> created at line 46.
+    Found 29-bit comparator less for signal <Motor1b$cmp_lt0000> created at line 41.
+    Found 29-bit comparator less for signal <Motor1b$cmp_lt0001> created at line 46.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   6 Comparator(s).
+Unit <mcqueen> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 29-bit up counter                                     : 1
+# Comparators                                          : 6
+ 29-bit comparator greater                             : 3
+ 29-bit comparator less                                : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 29-bit up counter                                     : 1
+# Comparators                                          : 6
+ 29-bit comparator greater                             : 3
+ 29-bit comparator less                                : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mcqueen> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mcqueen, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 29
+ Flip-Flops                                            : 29
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mcqueen.ngr
+Top Level Output File Name         : mcqueen
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 224
+#      GND                         : 1
+#      INV                         : 19
+#      LUT1                        : 46
+#      LUT2                        : 5
+#      LUT3                        : 3
+#      LUT4                        : 26
+#      MUXCY                       : 94
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 29
+#      FDR                         : 29
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 1
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       52  out of    960     5%  
+ Number of Slice Flip Flops:             29  out of   1920     1%  
+ Number of 4 input LUTs:                 99  out of   1920     5%  
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of     83     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clock                              | BUFGP                  | 29    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.167ns (Maximum Frequency: 193.536MHz)
+   Minimum input arrival time before clock: 4.514ns
+   Maximum output required time after clock: 9.701ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock'
+  Clock period: 5.167ns (frequency: 193.536MHz)
+  Total number of paths / destination ports: 435 / 29
+-------------------------------------------------------------------------
+Delay:               5.167ns (Levels of Logic = 29)
+  Source:            count_1 (FF)
+  Destination:       count_28 (FF)
+  Source Clock:      Clock rising
+  Destination Clock: Clock rising
+
+  Data Path: count_1 to count_28
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  count_1 (count_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_count_cy<1>_rt (Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_count_cy<1> (Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<2> (Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<3> (Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<4> (Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<5> (Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<6> (Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<7> (Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<8> (Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<9> (Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<10> (Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<11> (Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<12> (Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<13> (Mcount_count_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<14> (Mcount_count_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<15> (Mcount_count_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<16> (Mcount_count_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<17> (Mcount_count_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<18> (Mcount_count_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<19> (Mcount_count_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<20> (Mcount_count_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<21> (Mcount_count_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<22> (Mcount_count_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<23> (Mcount_count_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<24> (Mcount_count_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<25> (Mcount_count_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_cy<26> (Mcount_count_cy<26>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_count_cy<27> (Mcount_count_cy<27>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_count_xor<28> (Result<28>)
+     FDR:D                     0.308          count_28
+    ----------------------------------------
+    Total                      5.167ns (4.405ns logic, 0.762ns route)
+                                       (85.3% logic, 14.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              4.514ns (Levels of Logic = 2)
+  Source:            Switch (PAD)
+  Destination:       count_0 (FF)
+  Destination Clock: Clock rising
+
+  Data Path: Switch to count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  Switch_IBUF (Switch_IBUF)
+     INV:I->O             29   0.704   1.261  Switch_inv1_INV_0 (Switch_inv)
+     FDR:R                     0.911          count_0
+    ----------------------------------------
+    Total                      4.514ns (2.833ns logic, 1.681ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock'
+  Total number of paths / destination ports: 398 / 4
+-------------------------------------------------------------------------
+Offset:              9.701ns (Levels of Logic = 15)
+  Source:            count_8 (FF)
+  Destination:       Motor1b (PAD)
+  Source Clock:      Clock rising
+
+  Data Path: count_8 to Motor1b
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.844  count_8 (count_8)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_Motor1a_cmp_lt0000_cy<0>_rt (Mcompar_Motor1a_cmp_lt0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_Motor1a_cmp_lt0000_cy<0> (Mcompar_Motor1a_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<1> (Mcompar_Motor1a_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<2> (Mcompar_Motor1a_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<3> (Mcompar_Motor1a_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<4> (Mcompar_Motor1a_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<5> (Mcompar_Motor1a_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<6> (Mcompar_Motor1a_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<7> (Mcompar_Motor1a_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<8> (Mcompar_Motor1a_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_Motor1a_cmp_lt0000_cy<9> (Mcompar_Motor1a_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           2   0.459   0.526  Mcompar_Motor1a_cmp_lt0000_cy<10> (Mcompar_Motor1a_cmp_lt0000_cy<10>)
+     LUT3:I1->O            1   0.704   0.455  Motor2b_SW0 (N5)
+     LUT4:I2->O            2   0.704   0.447  Motor2b (Motor2b_OBUF)
+     OBUF:I->O                 3.272          Motor1b_OBUF (Motor1b)
+    ----------------------------------------
+    Total                      9.701ns (7.429ns logic, 2.272ns route)
+                                       (76.6% logic, 23.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.72 secs
+ 
+--> 
+
+Total memory usage is 254884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
